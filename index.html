@@ -6,16 +6,17 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav id="navbar">
-      <ul>
-        <div class="flex-container">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a</li>
-            <li><a href="#">Organizations</a</li>
-            <li><a href="#">About</a</li>
-        </div>
-      </ul>
-    </nav>
+    <header>
+      <nav id="navbar">
+        <a href="#" id="menu-icon"></a>
+          <div class="flex-container">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a</li>
+              <li><a href="#">Organizations</a</li>
+              <li><a href="#">About</a</li>
+          </div>
+      </nav>
+    </header>
 
     <div class="EmptySpace"></div>
 
@@ -38,8 +39,19 @@
       A little about your self.
     </p>
 
-    <input type="text" placeholder="Search Key Word" />
-    </br>
+    <p>
+    <div class="inputlabel">Name:</div>
+    <input id="name" type="text" placeholder="Last name, First Name" />
+    </p>
+    <p>
+    <div class="inputlabel">Email:</div>
+    <input id="email" type="text" placeholder="example@gmail.com" />
+    </p>
+    <p>
+    <div class="inputlabel">Message:</div>
+    <input id="message" type="text" />
+    </p>
+
     <button type="button">Click Me</button>
 
     <div class="footer">
