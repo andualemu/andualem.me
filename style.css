@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(back2.jpg);
+    background-size: cover;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    align-items: ce
+}
+
+li:hover{
+    background-color: #555;
+    color: white;
+}
+
+.flex-container{
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.EmptySpace{
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#profile-pic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#description{
+    text-decoration: none;
+    padding-left: 40px;
+    color: black;
+    height: 160px;
+}
+
+.tile{
+    box-sizing:border-box;
+    width: 300px;
+    height: 300px;
+    flex: 1;
+    margin: 0 auto;
+}
+
+#connect {
+  display: block;
+  width: 400px;
+  height: 50px;
+  background: #606060;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  border-radius: 20px;
+  margin: 10px auto;
+  color: white;
+  text-decoration: none;
+}
+
+#connect:hover{
+  background: black;
+}
+
+#description2{
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 100px;
+}
+
+.footer{
+  background: #999999;
+  height: 150px;
+}
+
+.footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 5px solid cyan;
+}
+
+.footer-container{
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+li{
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  color: white;
+}
+/* displayed on on desktop view */
+@media (min-width: 500px){
+  .container, .footer-container, .flex-container{
+    display: flex;
+  }
+  .footer{
+    height: 50px;
+  }
+  div.EmptySpace{
+      padding: 50px;
+  }
+  #description{
+      padding-top: 40px;
+      padding-left: 40px;
+      color: black;
+  }
+}
