@@ -135,6 +135,10 @@ li{
   padding-bottom: 5px;
   color: white;
 }
+.footer{
+  position:fixed;
+  bottom:0;
+}
 /* displayed on on desktop view */
 @media only screen and (min-width: 500px){
   .container, .footer-container, .flex-container{
