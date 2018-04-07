@@ -9,41 +9,36 @@ body {
     background-size: cover;
 }
 
-#navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f1f1f1;
+.nav{
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
 }
 
-#menu-icon{
-  background: url(menu-icon.png);
-  display: hidden;
-  width: 32px;
-  height: 32px;
+.menu {
+  margin: 0 30px 0 0;
 }
 
-@media only screen and (max-width: 640px){
-  menu
+.meu a{
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
 }
-li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    align-items: ce
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display:none;
+  width: 26px;
+  float: right;
 }
-
-li:hover{
-    background-color: #555;
-    color: white;
-}
-
-.flex-container{
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+#toggle{
+  position: sticky;
+  z-index: 100;
+  display: none;
 }
 
 div.EmptySpace{
@@ -51,6 +46,8 @@ div.EmptySpace{
 }
 
 .container {
+    position: relative;
+    z-index: 1;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -64,6 +61,7 @@ div.EmptySpace{
 #description{
     text-decoration: none;
     padding-left: 40px;
+    padding-top: 20px;
     color: black;
     height: 160px;
 }
@@ -139,10 +137,38 @@ li{
 .footer{
   bottom:0;
 }
-
+.textfield-containter{
+  border: 5px solid red;
+}
+@media only screen and (max-width: 500px){
+  label{
+    position: relative;
+    z-index: 100;
+    display:block;
+    cursor: pointer;
+  }
+  .menu{
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    background: #999999;
+    width: 100%;
+    display: none;
+  }
+  .menu a{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    z-index: 99;
+  }
+  #toggle:checked + .menu{
+    display: block;
+  }
+}
 /* displayed on on desktop view */
 @media only screen and (min-width: 500px){
-  .container, .footer-container, .flex-container{
+  .container, .footer-container{
     display: flex;
   }
   .footer{
